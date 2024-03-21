@@ -3,10 +3,10 @@ import React, { Component } from 'react'
 export default class score extends Component {
   render() {
     return (
-      <div>
-        <h1>score</h1>
-        <div>
-            <h5>{this.props.score}</h5>
+      <div className='d-flex flex-column my-1'>
+        <h5 className='text-center'>{this.props.name}</h5>
+        <div className='bg-white text-black py-1 rounded text-center'>
+            {this.props.score}
         </div>
       </div>
     )
